@@ -1,0 +1,302 @@
+
+.header,.footer,.content { position:absolute; right:0;left:0}
+
+.header{
+   height:100px; top:0;
+   background: black;
+   text-align: center;
+}
+.footer{
+  height:100px; bottom:0;
+  background: black;
+}
+.content{
+  top:100px;
+  bottom:100px;
+  background:#DBEAF9;
+  /*overflow:hidden;*/ 
+/* use this if don't want any window scrollbars and use an inner element for scrolling*/
+}
+
+.header ul li a{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.header ul li{
+  display: inline;
+  padding: 20px;
+}
+
+.header ul{
+  line-height: 50px;
+}
+
+h2{
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 0px;
+     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera*/
+       -moz-animation: fadein 4s; /* Firefox */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+            animation: fadein 4s;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox  */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera  */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.myslide {
+    display:none;
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+.slideshow{
+    max-width: 500px;
+    padding-top: 50px;
+    float: left;
+    padding-left: 30px;
+}
+
+.intro{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-top: 100px;
+    padding-left: 450px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.intro2{
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-left: 450px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.footer p{
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+}
+
+.experience{
+    list-style: none;
+    line-height: 1.5;
+    clear: right;
+}
+
+.nested li a{
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.experience a:hover, a:active{
+    background: lightgray;
+}
+
+.experience ul {
+  font-weight: normal;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+#e1li, #e2li, #e3li, #e4li{
+  font-weight: bold;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding-left: 470px;
+}
+
+.gif{
+  float: left;
+  margin-left: 20px;
+}
+
+.content > .content:not(h2){
+  padding-top: 100px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;  
+}
+table,th, td{
+    border: solid 1px black;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+
+th{
+    height: 50px;
+    background-color: darkgray;
+}
+
+td{
+    text-align: center;
+    padding: 10px;
+}
+
+#resume{
+  height: 35px;
+  text-transform: uppercase;
+  color: black;
+}
+
+button.accordion {
+    background-color: darkgray;
+    color: black;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+}
+
+div.panel ul li{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.aboutme{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.vid{
+    display: block;
+    margin: 0 auto;
+    height: 350px;
+    width: 625px;
+    background: black;
+}
+
+.aboutme a{
+    color: black;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.aboutme a:hover, a:active{
+    background: lightgray;
+}
+#fill{
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: lightgray;
+}
+
+label{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.myform{
+   padding-left: 100px;
+   padding-right: 100px;
+}

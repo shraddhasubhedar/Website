@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <title>Experience</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="educational.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </div>
+<div class="content">
+  <h2>Experience</h2>
+   <p><img src="images/giphy.gif" alt="Experience Gif" class="gif"></p>
+    <ul class="experience">
+                        <li id="e1li"> Quality Assurance Intern, Monster Worldwide
+                            <div class="e1">
+                                <ul class="nested">
+                                    <li>Duration: June 2017 - August 2017 (3 months)</li>
+                                    <li>Location : Weston, MA</li>
+                                    <li> I am a part of the Monster Government Solutions group, that supports and provides job seeker and hiring site solution for the state of Ohio.</li>
+                                    <li>I am responsible for performing functional, regression and production acceptance testing.</li>
+                                    <li>I assisted in mobile testing, 508 compliance testing and automation test execution.</li>
+                                    <li>Along with this, I participated in the team/scrum meetings.</li>
+                                    <li><a href="https://www.monster.com" target="_blank" class="website">Visit Website</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li id="e2li"> Assistant Instructional Designer, Office Of Distance Education, Boston University
+                            <div class="e2">
+                                <ul class="nested">  
+                                    <li>Duration: January 2017 - May 2017 (5 months)</li>
+                                    <li> Location: Boston, MA</li>
+                                    <li>I was working in the Office of Distance Education as a Student Worker.</li>
+                                    <li>I was mainly involved in website development for the online courses offered by Boston University.</li>
+                                    <li>During this time, I used Adobe Dreamweaver CC for development in HTML5, CSS, JavaScript, etc.</li>
+                                    <li><a href="https://www.bu.edu/online/" target="_blank" class="website">Visit Website</a></li> 
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li id="e3li">Graduate Teaching Assistant, Rensselaer Polytechnic Institute
+                            <div class="e3">
+                                <ul class="nested">
+                                    <li>Duration: August 2016 - December 2016 (5 months)</li>
+                                    <li>Location: Troy, New York</li>
+                                    <li>Graduate Teaching Assistant in the Department of Cognitive Science</li>
+                                    <li><a href="http://www.rpi.edu/" target="_blank" class="website">Visit Website</a></li>
+                                </ul>   
+                            </div>
+                        </li>
+                        
+                        <li id="e4li"> Summer Intern, Tata Consultancy Services Limited
+                            <div class="e4">
+                                <ul class="nested">  
+                                    <li>Duration: June 2015 (1 month)</li>
+                                    <li> Location: Thane, India</li>
+                                    <li>I worked in the Innovation Labs on the project HCI for Low Literate Users. </li>
+                                    <li>Responsible for conducting experiments, data collection and performing quantitative and qualitative analysis.</li>
+                                    <li><a href="https://www.tcs.com/worldwide" target="_blank" class="website">Visit Website</a></li> 
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+</div>
+<div class="footer">
+  <p class='footerPara'>Created by Shraddha Subhedar in June 2017.<br>
+            <a href="https://www.facebook.com/shraddha.subhedar" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/shraddhasubhed1" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/shraddha-subhedar-876a05124/" class="fa fa-linkedin"></a>
+</div>
+<script>
+        $(document).ready(function(){
+            $(".e1").hide();
+            $(".e2").hide();
+            $(".e3").hide();
+            $(".e4").hide();
+            $("#e1li").click(function(){
+                $(".e1").toggle();           
+           });
+            $("#e2li").click(function(){
+                $(".e2").toggle();
+                
+           });
+            $("#e3li").click(function(){
+                $(".e3").toggle();
+                
+           });
+            $("#e4li").click(function(){
+                $(".e4").toggle();
+                
+           });
+        });
+    </script>
+</body>
+</html>

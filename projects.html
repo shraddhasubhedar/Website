@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <title>Projects</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="header">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="educational.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </div>
+<div class="content">
+  <h2>Projects</h2>
+            <button class="accordion">PocketChef – Kitchen Inventory Management and Recipe Suggestion Application</button>
+            <div class="panel">
+                <ul>
+                    <li>Built an Android application to suggest recipes to user from ingredients available in the kitchen inventory.</li>
+                    <li>The application updates the inventory after each use and also creates a grocery list for the user.</li>
+                    <li>It was coded in Java and the database used was MySQL.</li>    
+                </ul>    
+            </div>
+
+            <button class="accordion">Intrusion Detection System</button>
+            <div class="panel">
+                <ul>
+                    <li>Built a website to identify intruders in a system and for recording their activities when they break in.</li>
+                    <li>Collected information about different attacks and the areas of attacks to make system more secure.</li>
+                    <li>Deployed the website using PHP, HTML, CSS, jQuery, JavaScript, etc. and MySQL database.</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Website for Handicrafts store</button>
+            <div class="panel">
+                <ul>
+                    <li>Developed an E-commerce website to provide a platform for hobbyists to buy and sell handicraft items.</li>
+                    <li>Used HTML, CSS, jQuery, PHP, etc. The database used was phpMyAdmin.</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Social Network based on Picture based polling</button>
+            <div class="panel">
+                <ul>
+                    <li>Created a website which lets the user create a poll by uploading multiple images and allows users to poll via up votes on any one of the images.</li>
+                    <li>Deployed on Amazon Web Server. The scripting was done using PHP, CSS3 and HTML5.</li>
+                </ul>
+            </div>
+</div>
+<div class="footer">
+  <p class='footerPara'>Created by Shraddha Subhedar in June 2017.<br>
+            <a href="https://www.facebook.com/shraddha.subhedar" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/shraddhasubhed1" class="fa fa-twitter"></a>
+            <a href="https://www.linkedin.com/in/shraddha-subhedar-876a05124/" class="fa fa-linkedin"></a>
+</div>
+<script>
+var x = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < x.length; i += 1) {
+    x[i].onclick = function () {
+        this.classList.toggle("active");
+
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    };
+} 
+</script>
+</body>
+</html>
